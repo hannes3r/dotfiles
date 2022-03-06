@@ -1,0 +1,13 @@
+picom &
+nitrogen --restore
+plank &
+
+## Polkit authentication
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+
+## Set UK keyboard
+setxkbmap -layout de &
+~/.config/polybar/launch.sh
+xfce4-clipman &
+dunst &
+redshift-gtk -l 52.28:8.92 &

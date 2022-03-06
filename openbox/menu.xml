@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+        <menu id="1" label="Development">
+            <item label="Atom"> <action name="Execute">
+                <execute>env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom</execute>
+            </action> </item>
+            <item label="GDB"> <action name="Execute">
+                <execute>alacritty -e gdb</execute>
+            </action> </item>
+            <item label="Git Gui"> <action name="Execute">
+                <execute>git gui</execute>
+            </action> </item>
+            <item label="Python"> <action name="Execute">
+                <execute>alacritty -e python</execute>
+            </action> </item>
+            <item label="Python (v2.7)"> <action name="Execute">
+                <execute>alacritty -e python2.7</execute>
+            </action> </item>
+            <item label="Tclsh8.6"> <action name="Execute">
+                <execute>alacritty -e tclsh8.6</execute>
+            </action> </item>
+        </menu>
+        <menu id="2" label="Editors">
+            <item label="Emacs"> <action name="Execute">
+                <execute>alacritty -e emacs</execute>
+            </action> </item>
+            <item label="Joe"> <action name="Execute">
+                <execute>alacritty -e joe</execute>
+            </action> </item>
+            <item label="Nano"> <action name="Execute">
+                <execute>alacritty -e nano</execute>
+            </action> </item>
+            <item label="Neovim"> <action name="Execute">
+                <execute>alacritty -e nvim</execute>
+            </action> </item>
+            <item label="Vi"> <action name="Execute">
+                <execute>alacritty -e vi</execute>
+            </action> </item>
+            <item label="Vim"> <action name="Execute">
+                <execute>alacritty -e vim</execute>
+            </action> </item>
+        </menu>
+        <menu id="18" label="Games">
+            <menu id="17" label="Amusement">
+                <item label="Xclock (digital)"> <action name="Execute">
+                    <execute>xclock -digital -update 1</execute>
+                </action> </item>
+            </menu>
+        </menu>
+        <menu id="6" label="Graphics">
+            <item label="Document Scanner"> <action name="Execute">
+                <execute>simple-scan</execute>
+            </action> </item>
+            <item label="Image Viewer"> <action name="Execute">
+                <execute>eog</execute>
+            </action> </item>
+            <item label="Photos"> <action name="Execute">
+                <execute>gnome-photos</execute>
+            </action> </item>
+            <item label="scanimage"> <action name="Execute">
+                <execute>alacritty -e scanimage</execute>
+            </action> </item>
+        </menu>
+        <menu id="7" label="Multimedia">
+            <item label="ALSA mixer"> <action name="Execute">
+                <execute>alacritty -e alsamixer</execute>
+            </action> </item>
+            <item label="Videos"> <action name="Execute">
+                <execute>totem</execute>
+            </action> </item>
+        </menu>
+        <menu id="5" label="Network">
+            <item label="Brave Web Browser"> <action name="Execute">
+                <execute>brave-browser-stable</execute>
+            </action> </item>
+            <item label="FireFox"> <action name="Execute">
+                <execute>firefox</execute>
+            </action> </item>
+            <item label="FTP"> <action name="Execute">
+                <execute>alacritty -e ftp</execute>
+            </action> </item>
+            <item label="Mail"> <action name="Execute">
+                <execute>alacritty -e mail</execute>
+            </action> </item>
+            <item label="Thunderbird"> <action name="Execute">
+                <execute>thunderbird</execute>
+            </action> </item>
+            <item label="TkVNC"> <action name="Execute">
+                <execute>xterm -e tkvnc</execute>
+            </action> </item>
+            <item label="Transmission"> <action name="Execute">
+                <execute>transmission-gtk</execute>
+            </action> </item>
+        </menu>
+        <menu id="3" label="Office">
+            <item label="Contacts"> <action name="Execute">
+                <execute>gnome-contacts</execute>
+            </action> </item>
+            <item label="Document Viewer"> <action name="Execute">
+                <execute>evince</execute>
+            </action> </item>
+            <item label="Foliate"> <action name="Execute">
+                <execute>com.github.johnfactotum.Foliate</execute>
+            </action> </item>
+        </menu>
+        <menu id="39" label="Other">
+            <item label="Security and Users"> <action name="Execute">
+                <execute>/sbin/yast2</execute>
+            </action> </item>
+        </menu>
+        <menu id="4" label="Science">
+            <item label="bc"> <action name="Execute">
+                <execute>alacritty -e bc</execute>
+            </action> </item>
+            <item label="dc"> <action name="Execute">
+                <execute>alacritty -e dc</execute>
+            </action> </item>
+        </menu>
+        <menu id="19" label="Shells">
+            <item label="Alacritty"> <action name="Execute">
+                <execute>alacritty</execute>
+            </action> </item>
+            <item label="Files"> <action name="Execute">
+                <execute>nautilus</execute>
+            </action> </item>
+            <item label="GIT"> <action name="Execute">
+                <execute>alacritty -e git</execute>
+            </action> </item>
+            <item label="Terminal"> <action name="Execute">
+                <execute>gnome-terminal</execute>
+            </action> </item>
+            <item label="Xterm"> <action name="Execute">
+                <execute>xterm</execute>
+            </action> </item>
+            <item label="XTerm (Unicode)"> <action name="Execute">
+                <execute>uxterm</execute>
+            </action> </item>
+        </menu>
+        <menu id="37" label="System">
+            <menu id="36" label="Settings">
+                <menu id="21" label="GNOME">
+                    <item label="Characters"> <action name="Execute">
+                        <execute>gnome-characters</execute>
+                    </action> </item>
+                    <item label="Settings"> <action name="Execute">
+                        <execute>gnome-control-center</execute>
+                    </action> </item>
+                </menu>
+                <menu id="35" label="Xfce">
+                    <item label="Screensaver"> <action name="Execute">
+                        <execute>xscreensaver-settings</execute>
+                    </action> </item>
+                </menu>
+                <item label="Color Profile Viewer"> <action name="Execute">
+                    <execute>gcm-viewer</execute>
+                </action> </item>
+                <item label="Customize Look and Feel"> <action name="Execute">
+                    <execute>lxappearance</execute>
+                </action> </item>
+                <item label="Disks"> <action name="Execute">
+                    <execute>gnome-disks</execute>
+                </action> </item>
+                <item label="nitrogen"> <action name="Execute">
+                    <execute>nitrogen</execute>
+                </action> </item>
+                <item label="Openbox Configuration Manager"> <action name="Execute">
+                    <execute>obconf</execute>
+                </action> </item>
+                <item label="Package Sources"> <action name="Execute">
+                    <execute>gpk-prefs</execute>
+                </action> </item>
+                <item label="Passwords and Keys"> <action name="Execute">
+                    <execute>seahorse</execute>
+                </action> </item>
+                <item label="Print Settings"> <action name="Execute">
+                    <execute>system-config-printer</execute>
+                </action> </item>
+                <item label="System Log"> <action name="Execute">
+                    <execute>/sbin/yast2 view_anymsg /var/log/messages</execute>
+                </action> </item>
+                <item label="YaST"> <action name="Execute">
+                    <execute>xdg-su -c /sbin/yast2</execute>
+                </action> </item>
+                <item label="YaST Add-On Products"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 add-on"</execute>
+                </action> </item>
+                <item label="YaST Alternatives"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 alternatives"</execute>
+                </action> </item>
+                <item label="YaST AppArmor"> <action name="Execute">
+                    <execute>xdg-su -c '/sbin/yast2 apparmor'</execute>
+                </action> </item>
+                <item label="YaST Boot Loader"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 bootloader"</execute>
+                </action> </item>
+                <item label="YaST Date and Time"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 timezone"</execute>
+                </action> </item>
+                <item label="YaST Filesystem Snapshots"> <action name="Execute">
+                    <execute>xdg-su -c '/sbin/yast2 snapper'</execute>
+                </action> </item>
+                <item label="YaST Firewall"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 firewall"</execute>
+                </action> </item>
+                <item label="YaST Hostnames"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 host"</execute>
+                </action> </item>
+                <item label="YaST Install VM"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 virtualization"</execute>
+                </action> </item>
+                <item label="YaST Keyboard"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 keyboard"</execute>
+                </action> </item>
+                <item label="YaST Language"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 language"</execute>
+                </action> </item>
+                <item label="YaST Media Check"> <action name="Execute">
+                    <execute>/sbin/yast2 checkmedia</execute>
+                </action> </item>
+                <item label="YaST Network"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 lan"</execute>
+                </action> </item>
+                <item label="YaST NTP Configuration"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 ntp-client"</execute>
+                </action> </item>
+                <item label="YaST Online Update"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 online_update"</execute>
+                </action> </item>
+                <item label="YaST Partitioner"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 partitioner"</execute>
+                </action> </item>
+                <item label="YaST Printer"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 printer"</execute>
+                </action> </item>
+                <item label="YaST Proxy"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 proxy"</execute>
+                </action> </item>
+                <item label="YaST Release Notes"> <action name="Execute">
+                    <execute>/sbin/yast2 inst_release_notes</execute>
+                </action> </item>
+                <item label="YaST Relocation Server"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 relocation-server"</execute>
+                </action> </item>
+                <item label="YaST Remote Administration"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 remote"</execute>
+                </action> </item>
+                <item label="YaST Scanner"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 scanner"</execute>
+                </action> </item>
+                <item label="YaST Security Center"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 security"</execute>
+                </action> </item>
+                <item label="YaST Services Manager"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 services-manager"</execute>
+                </action> </item>
+                <item label="YaST Software Management"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 sw_single"</execute>
+                </action> </item>
+                <item label="YaST Software Repositories"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 repositories"</execute>
+                </action> </item>
+                <item label="YaST Sound"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 sound"</execute>
+                </action> </item>
+                <item label="YaST Sysconfig Editor"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 sysconfig"</execute>
+                </action> </item>
+                <item label="YaST Systemd Journal"> <action name="Execute">
+                    <execute>/sbin/yast2 journal</execute>
+                </action> </item>
+                <item label="YaST User and Group Management"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 users"</execute>
+                </action> </item>
+                <item label="YaST Vendor Driver"> <action name="Execute">
+                    <execute>xdg-su -c "/sbin/yast2 vendor"</execute>
+                </action> </item>
+            </menu>
+            <item label="chronyc"> <action name="Execute">
+                <execute>alacritty -e chronyc</execute>
+            </action> </item>
+            <item label="dconf Editor"> <action name="Execute">
+                <execute>dconf-editor</execute>
+            </action> </item>
+            <item label="Disk Usage Analyzer"> <action name="Execute">
+                <execute>baobab</execute>
+            </action> </item>
+            <item label="GDM flexiserver"> <action name="Execute">
+                <execute>gdmflexiserver</execute>
+            </action> </item>
+            <item label="GDM flexiserver in Xnest"> <action name="Execute">
+                <execute>gdmflexiserver -n</execute>
+            </action> </item>
+            <item label="GNOME System Monitor"> <action name="Execute">
+                <execute>gnome-system-monitor</execute>
+            </action> </item>
+            <item label="Htop"> <action name="Execute">
+                <execute>alacritty -e htop</execute>
+            </action> </item>
+            <item label="Logs"> <action name="Execute">
+                <execute>gnome-logs</execute>
+            </action> </item>
+            <item label="Package Updater"> <action name="Execute">
+                <execute>gpk-update-viewer</execute>
+            </action> </item>
+            <item label="Parental Controls"> <action name="Execute">
+                <execute>malcontent-control</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>xterm -e /usr/bin/pstree.x11</execute>
+            </action> </item>
+            <item label="pstree"> <action name="Execute">
+                <execute>alacritty -e pstree</execute>
+            </action> </item>
+            <item label="Pstree"> <action name="Execute">
+                <execute>alacritty -e pstree.x11</execute>
+            </action> </item>
+            <item label="Software"> <action name="Execute">
+                <execute>gnome-software</execute>
+            </action> </item>
+            <item label="Top"> <action name="Execute">
+                <execute>alacritty -e top</execute>
+            </action> </item>
+            <item label="Welcome"> <action name="Execute">
+                <execute>opensuse-welcome</execute>
+            </action> </item>
+            <item label="Xconsole"> <action name="Execute">
+                <execute>xconsole</execute>
+            </action> </item>
+            <item label="YaST Software"> <action name="Execute">
+                <execute>/usr/lib/YaST2/bin/sw_single_wrapper</execute>
+            </action> </item>
+        </menu>
+        <menu id="38" label="Utilities">
+            <item label="Activate ScreenSaver (Next)"> <action name="Execute">
+                <execute>xscreensaver-command -next</execute>
+            </action> </item>
+            <item label="Activate ScreenSaver (Previous)"> <action name="Execute">
+                <execute>xscreensaver-command -prev</execute>
+            </action> </item>
+            <item label="Activate ScreenSaver (Random)"> <action name="Execute">
+                <execute>xscreensaver-command -activate</execute>
+            </action> </item>
+            <item label="Archive Manager"> <action name="Execute">
+                <execute>file-roller</execute>
+            </action> </item>
+            <item label="Calculator"> <action name="Execute">
+                <execute>gnome-calculator</execute>
+            </action> </item>
+            <item label="Clocks"> <action name="Execute">
+                <execute>gnome-clocks</execute>
+            </action> </item>
+            <item label="Demo Screen Hacks"> <action name="Execute">
+                <execute>xscreensaver-command -demo</execute>
+            </action> </item>
+            <item label="Disable XScreenSaver"> <action name="Execute">
+                <execute>xscreensaver-command -exit</execute>
+            </action> </item>
+            <item label="Enable XScreenSaver"> <action name="Execute">
+                <execute>xscreensaver</execute>
+            </action> </item>
+            <item label="Extensions"> <action name="Execute">
+                <execute>gnome-extensions-app --gapplication-service</execute>
+            </action> </item>
+            <item label="Help"> <action name="Execute">
+                <execute>yelp</execute>
+            </action> </item>
+            <item label="Info"> <action name="Execute">
+                <execute>alacritty -e info</execute>
+            </action> </item>
+            <item label="Lock Screen (XScreenSaver)"> <action name="Execute">
+                <execute>xscreensaver-command -lock</execute>
+            </action> </item>
+            <item label="Maps"> <action name="Execute">
+                <execute>gapplication launch org.gnome.Maps</execute>
+            </action> </item>
+            <item label="Nextcloud Desktop"> <action name="Execute">
+                <execute>nextcloud</execute>
+            </action> </item>
+            <item label="picom"> <action name="Execute">
+                <execute>picom --dbus</execute>
+            </action> </item>
+            <item label="Plank"> <action name="Execute">
+                <execute>plank</execute>
+            </action> </item>
+            <item label="Reinitialize XScreenSaver"> <action name="Execute">
+                <execute>xscreensaver-command -restart</execute>
+            </action> </item>
+            <item label="ScreenSaver Preferences"> <action name="Execute">
+                <execute>xscreensaver-command -prefs</execute>
+            </action> </item>
+            <item label="Screenshot"> <action name="Execute">
+                <execute>gnome-screenshot --interactive</execute>
+            </action> </item>
+            <item label="Tweaks"> <action name="Execute">
+                <execute>gnome-tweaks</execute>
+            </action> </item>
+            <item label="Weather"> <action name="Execute">
+                <execute>gapplication launch org.gnome.Weather</execute>
+            </action> </item>
+            <item label="Xclock (analog)"> <action name="Execute">
+                <execute>xclock -analog</execute>
+            </action> </item>
+            <item label="Xclock (digital)"> <action name="Execute">
+                <execute>xclock -digital</execute>
+            </action> </item>
+            <item label="Xsetroot"> <action name="Execute">
+                <execute>xsetroot</execute>
+            </action> </item>
+        </menu>
+        <separator/>
+        <menu id="40" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+            <item label="Exit"> <action name="Exit"/> </item>
+        </menu>
+    </menu>
+</openbox_menu>
