@@ -1,6 +1,4 @@
-# My dotfiles Files
-
----
+# My Dotfiles
 
 ## Dependencies
 
