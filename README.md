@@ -9,6 +9,7 @@
 sudo zypper in i3-gaps polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk
 ```
 **Not in Repos**
+
 [`light`](#Light)
 
 ### bspwm
@@ -17,6 +18,7 @@ sudo zypper in bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alac
 ```
 
 **Not in Repos**
+
 [`light`](https://github.com/haikarainen/light)
 
 ---
@@ -26,6 +28,7 @@ sudo zypper in bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alac
 
 ### Light
 *Tool for backlight control*
+
 Dependencies: `automake autoconf`
 ```bash
 git clone https://github.com/haikarainen/light
@@ -56,6 +59,7 @@ If the tool doesn't seem to work, you need to edit kernel parameters
 
 ### Rofi
 *The files are also included in this repo, this step is optional to get the latest versions*
+
 [Repository](https://github.com/adi1090x/rofi)
 ```bash
 git clone --depth=1 https://github.com/adi1090x/rofi.git
@@ -66,6 +70,7 @@ chmod +x setup.sh
 
 ### Polybar
 *The files are also included in this repo, this step is optional to get the latest versions*
+
 [Repository](https://github.com/adi1090x/polybar-themes)
 ```bash
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
