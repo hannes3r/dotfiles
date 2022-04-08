@@ -32,14 +32,38 @@ killall -q xfce4-clipman
 killall -q dunst
 killall -q redshift-gtk
 
+# fix cursor
 xsetroot -cursor_name left_ptr &
-~/.config/polybar/launch.sh --material &
-nm-applet &
-light -N 1.3 &
-picom -CGb --vsync --backend glx &
-nitrogen --restore &
+
+# set keyboard map
 setxkbmap -layout de &
+
+# polybar
+~/.config/polybar/launch.sh --material &
+
+# set lower boundary for light
+light -N 1.3 &
+
+# start picom
+picom -CGb --vsync --backend glx &
+
+# restore wallpaper
+nitrogen --restore &
+
+# autostart tools
 xfce4-clipman &
 dunst &
+nm-applet &
 redshift-gtk -l 52.28:8.92 &
 /home/hannes/Applications/Nextcloud-3.4.4-x86_64.AppImage &
+
+
+#######################
+# create xcape bindings
+#######################
+
+# ctrl = escape for vim
+xcape -e 'Control_L=Escape'
+
+# map super to show rofi
+xcape -e 'Super_L=Alt_L|F12'

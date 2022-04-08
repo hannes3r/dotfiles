@@ -29,10 +29,13 @@ super + Return
 # program launcher
 super + d
 	~/.config/rofi/bin/launcher_colorful
-	# rofi -modi drun -show drun -show-icons -theme Arc-Dark	
 
 super + @space
 	~/.config/rofi/bin/launcher_colorful
+
+# extra binding for xcape
+alt + F12
+	~/.config/sxhkd/call_rofi.sh
 
 # make sxhkd reload its configuration files:
 super + Escape

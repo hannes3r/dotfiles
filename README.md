@@ -5,7 +5,7 @@
 
 ### bspwm
 ```bash
-sudo zypper in bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk plank
+sudo dnf install bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk plank
 ```
 
 **Not in Repos**
@@ -14,7 +14,7 @@ sudo zypper in bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alac
 
 ### i3
 ```bash
-sudo zypper in i3-gaps polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk
+sudo dnf install i3-gaps polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk
 ```
 **Not in Repos**
 
@@ -24,6 +24,19 @@ sudo zypper in i3-gaps polybar nm-applet lxqt-policykit-agent flameshot alacritt
 
 ## Utilities
 *These tools are not included in the official repos*
+
+### xcape
+*Tool to remap modifier keys, i.e. to use super to open rofi*
+
+Configuration of the tool is already build embedded into bspwmrc
+
+Dependencies: `git gcc make pkgconfig libX11-devel libXtst-devel libXi-devel`
+```bash
+git clone https://github.com/alols/xcape.git
+cd xcape
+make
+sudo make install
+```
 
 ### Light
 *Tool for backlight control*
@@ -91,4 +104,5 @@ cd polybar-themes
 chmod +x setup.sh
 ./setup.sh
 ```
+
 
