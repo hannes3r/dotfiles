@@ -75,7 +75,7 @@ super + v
 
 # power menu
 super + shift + e
-	~/.config/rofi/bin/menu_powermenu
+	~/.config/rofi/bin/android_powermenu
 
 #
 # state/flags
