@@ -26,8 +26,14 @@ bspc rule -a Screenkey manage=off
 # ------------------------------------
 
 # Apps 
+
+# shutdown previous instances
+killall -q xfce4-clipman
+killall -q dunst
+killall -q redshift-gtk
+
 xsetroot -cursor_name left_ptr &
-~/.config/polybar/launch.sh --docky &
+~/.config/polybar/launch.sh --material &
 nm-applet &
 light -N 1.3 &
 picom -CGb --vsync --backend glx &
@@ -36,3 +42,4 @@ setxkbmap -layout de &
 xfce4-clipman &
 dunst &
 redshift-gtk -l 52.28:8.92 &
+/home/hannes/Applications/Nextcloud-3.4.4-x86_64.AppImage &
