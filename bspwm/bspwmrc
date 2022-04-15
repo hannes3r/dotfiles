@@ -62,8 +62,8 @@ redshift-gtk -l 52.28:8.92 &
 # create xcape bindings
 #######################
 
-# ctrl = escape for vim
-xcape -e 'Control_L=Escape'
+# ctrl = escape for vim (bad for games xD)
+# xcape -e 'Control_L=Escape'
 
 # map super to show rofi
 xcape -e 'Super_L=Alt_L|F12'
