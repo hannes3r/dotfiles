@@ -5,7 +5,7 @@
 
 ### bspwm
 ```bash
-sudo dnf install bspwm sxhkd polybar nm-applet lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk plank
+sudo dnf install bspwm sxhkd polybar nm-applet lxpolkit lxqt-policykit-agent flameshot alacritty rofi i3lock xfce4-clipman-plugin picom nitrogen dunst redshift-gtk plank
 ```
 
 **Not in Repos**
